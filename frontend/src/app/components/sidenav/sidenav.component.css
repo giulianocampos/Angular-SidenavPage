@@ -1,0 +1,22 @@
+mat-toolbar {
+  background-color: #091353;
+  color: #fff;
+}
+mat-sidenav {
+  background-color: #091353;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 18%;
+}
+
+.mat-list-item {
+  color: #fff;
+}
+
+
+button {
+  margin-right: 10px;
+}
+
+
