@@ -7,16 +7,20 @@ mat-sidenav {
   margin-top: 10px;
   margin-left: 10px;
   border-radius: 10px;
-  width: 18%;
+  width: 16%;
 }
 
 .mat-list-item {
   color: #fff;
 }
 
-
 button {
   margin-right: 10px;
 }
+
+#Icon {
+  padding: 4px;
+}
+
 
 

@@ -10,11 +10,22 @@
 </mat-toolbar>
 
 <mat-sidenav-container>
-  <mat-sidenav #sidenav opened="true" mode="side">
+  <mat-sidenav #sidenav opened="true" mode="over">
     <mat-nav-list>
-        <a mat-list-item (click)="homePage()">Home</a>
-        <a mat-list-item (click)="contextoPage()">Contexto</a>
-        <a mat-list-item (click)="ideiaPage()">Ideia e Solução</a>
+        <a mat-list-item (click)="homePage()">
+          <mat-icon id="Icon" aria-hidden="false">home</mat-icon>
+          Home
+        </a>
+
+        <a mat-list-item (click)="contextoPage()">
+          <mat-icon id="Icon" aria-hidden="false">bookmark_border</mat-icon>
+          Contexto
+        </a>
+
+        <a mat-list-item (click)="ideiaPage()">
+          <mat-icon id="Icon" aria-hidden="false">light</mat-icon>
+          Ideia e Solução
+        </a>
     </mat-nav-list>
   </mat-sidenav>
 

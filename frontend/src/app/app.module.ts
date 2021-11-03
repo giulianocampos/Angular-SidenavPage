@@ -13,6 +13,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/home/home.component';
 import { ContextoComponent } from './components/contexto/contexto.component';
 import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.component';
+import { CreateSugestaoComponent } from './components/create-sugestao/create-sugestao.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.
     HomeComponent,
     ContextoComponent,
     IdeiaSolucaoComponent,
+    CreateSugestaoComponent,
   ],
   imports: [
     BrowserModule,
