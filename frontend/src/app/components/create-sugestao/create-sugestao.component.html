@@ -1,11 +1,28 @@
 <div class="content">
 
-  <button mat-raised-button (click)="createSugestao()">
-    Salvar
-  </button>
+  <mat-card>
+    <mat-card-title>Nova Sugestão</mat-card-title>
 
-  <button mat-raised-button (click)="cancel()">
-    Cancelar
-  </button>
+    <form>
+      <mat-form-field>
+          <input matInput placeholder="Resuma sua ideia" [(ngModel)]="sugestao.explicacao" name="explicacao">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Digite um email para contato" [(ngModel)]="sugestao.email" name="email">
+      </mat-form-field>
+
+    </form>
+
+
+    <button mat-raised-button (click)="createSugestao()">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+      Cancelar
+    </button>
+
+  </mat-card>
 </div>
 
