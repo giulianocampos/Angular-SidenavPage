@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { SugestaoService } from './../sugestao.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateSugestaoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sugestaoService: SugestaoService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  createSugestao():  void {
+  this.sugestaoService.showMessage('Solução criada com sucesso!')
+  }
+
+  cancel(): void {
+    this.router.navigate(['ideia-solucao'])
   }
 
 }

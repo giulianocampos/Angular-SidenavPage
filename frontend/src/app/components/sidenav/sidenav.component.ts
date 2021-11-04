@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
+import { BreakpointObserver } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-sidenav',
@@ -8,7 +10,11 @@ import { Router } from '@angular/router';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  @ViewChild(MatSidenav) sidenav!: MatSidenav;
+
+  constructor(private router: Router, private observer: BreakpointObserver) {
+
+  }
 
   ngOnInit(): void {
   }

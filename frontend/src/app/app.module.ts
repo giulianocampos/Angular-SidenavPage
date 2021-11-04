@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/home/home.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { ContextoComponent } from './components/contexto/contexto.component';
 import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.component';
 import { CreateSugestaoComponent } from './components/create-sugestao/create-sugestao.component';
@@ -34,6 +35,7 @@ import { CreateSugestaoComponent } from './components/create-sugestao/create-sug
     MatButtonModule,
     MatListModule,
     MatSidenavModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

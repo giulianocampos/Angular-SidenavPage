@@ -13,7 +13,7 @@ export class IdeiaSolucaoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigateToSugestaoCreate(): void {
+  SugestaoCreate(): void {
     this.router.navigate(['sugestao/create'])
   }
 
