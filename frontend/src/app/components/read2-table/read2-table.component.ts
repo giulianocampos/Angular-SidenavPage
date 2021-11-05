@@ -17,7 +17,7 @@ export class Read2TableComponent implements AfterViewInit {
   dataSource: Read2TableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['id', 'name', "explicacao"];
 
   constructor() {
     this.dataSource = new Read2TableDataSource();

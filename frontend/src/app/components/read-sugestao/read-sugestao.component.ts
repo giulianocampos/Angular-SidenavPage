@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReadSugestaoComponent implements OnInit {
 
   sugestoes: Sugestao[]
+  displayedColumns = ['id', 'name', 'explicacao', 'action']
 
   constructor(private sugestaoService: SugestaoService) { }
 
