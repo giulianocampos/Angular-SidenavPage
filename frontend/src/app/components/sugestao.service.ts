@@ -24,4 +24,8 @@ export class SugestaoService {
   create(sugestao: Sugestao): Observable<Sugestao> {
     return this.http.post<Sugestao>(this.baseUrl, sugestao)
   }
+
+  read(): Observable<Sugestao[]>{
+    return this.http.get<Sugestao[]>(this.baseUrl)
+  }
 }

@@ -20,6 +20,11 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { ContextoComponent } from './components/contexto/contexto.component';
 import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.component';
 import { CreateSugestaoComponent } from './components/create-sugestao/create-sugestao.component';
+import { ReadSugestaoComponent } from './components/read-sugestao/read-sugestao.component';
+import { Read2TableComponent } from './components/read2-table/read2-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 
 @NgModule({
@@ -30,6 +35,8 @@ import { CreateSugestaoComponent } from './components/create-sugestao/create-sug
     ContextoComponent,
     IdeiaSolucaoComponent,
     CreateSugestaoComponent,
+    ReadSugestaoComponent,
+    Read2TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +52,10 @@ import { CreateSugestaoComponent } from './components/create-sugestao/create-sug
     MatFormFieldModule,
     FormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

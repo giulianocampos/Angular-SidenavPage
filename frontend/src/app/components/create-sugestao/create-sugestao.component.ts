@@ -11,8 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class CreateSugestaoComponent implements OnInit {
 
   sugestao: Sugestao = {
-    explicacao: '',
-    email: ''
+    name: '',
+    explicacao: ''
   }
 
   constructor(private sugestaoService: SugestaoService, private router: Router) { }
