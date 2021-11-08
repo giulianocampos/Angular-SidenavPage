@@ -15,7 +15,7 @@ export class UpdateSugestaoComponent implements OnInit {
   constructor(private router: Router, private sugestaoService: SugestaoService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id')
+    const id = +this.route.snapshot.paramMap.get('id')
     this.sugestaoService.readById(id).subscribe(sugestao => {
       this.sugestao=sugestao
     });

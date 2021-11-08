@@ -1,3 +1,4 @@
+import { DeleteSugestaoComponent } from './components/delete-sugestao/delete-sugestao.component';
 import { UpdateSugestaoComponent } from './components/update-sugestao/update-sugestao.component';
 import { CreateSugestaoComponent } from './components/create-sugestao/create-sugestao.component';
 import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.component';
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path: 'contexto', component: ContextoComponent},
   {path: 'ideia-solucao', component: IdeiaSolucaoComponent},
   {path: 'sugestao/create', component: CreateSugestaoComponent},
-  {path: 'sugestao/update/:id', component: UpdateSugestaoComponent}
+  {path: 'sugestao/update/:id', component: UpdateSugestaoComponent},
+  {path: 'sugestao/delete/:id', component: DeleteSugestaoComponent}
 ];
 
 @NgModule({

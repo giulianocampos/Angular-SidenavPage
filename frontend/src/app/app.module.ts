@@ -26,6 +26,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { UpdateSugestaoComponent } from './components/update-sugestao/update-sugestao.component';
+import { DeleteSugestaoComponent } from './components/delete-sugestao/delete-sugestao.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import { UpdateSugestaoComponent } from './components/update-sugestao/update-sug
     ReadSugestaoComponent,
     Read2TableComponent,
     UpdateSugestaoComponent,
+    DeleteSugestaoComponent,
   ],
   imports: [
     BrowserModule,
