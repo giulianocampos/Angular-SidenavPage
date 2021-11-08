@@ -2,12 +2,12 @@
   "sugestoes": [
     {
       "id": 1,
-      "name": "teste de nome",
+      "name": "teste de nome atualizado",
       "explicacao": "Teste de explicação 1"
     },
     {
       "id": 2,
-      "name": "teste de nome 2",
+      "name": "teste de nome 22",
       "explicacao": "Teste de explicação 2"
     }
   ]

@@ -1,3 +1,4 @@
+import { UpdateSugestaoComponent } from './components/update-sugestao/update-sugestao.component';
 import { CreateSugestaoComponent } from './components/create-sugestao/create-sugestao.component';
 import { IdeiaSolucaoComponent } from './components/ideia-solucao/ideia-solucao.component';
 import { ContextoComponent } from './components/contexto/contexto.component';
@@ -9,7 +10,8 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'contexto', component: ContextoComponent},
   {path: 'ideia-solucao', component: IdeiaSolucaoComponent},
-  {path: 'sugestao/create', component: CreateSugestaoComponent}
+  {path: 'sugestao/create', component: CreateSugestaoComponent},
+  {path: 'sugestao/update/:id', component: UpdateSugestaoComponent}
 ];
 
 @NgModule({

@@ -25,6 +25,7 @@ import { Read2TableComponent } from './components/read2-table/read2-table.compon
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { UpdateSugestaoComponent } from './components/update-sugestao/update-sugestao.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { MatSortModule } from '@angular/material/sort';
     CreateSugestaoComponent,
     ReadSugestaoComponent,
     Read2TableComponent,
+    UpdateSugestaoComponent,
   ],
   imports: [
     BrowserModule,

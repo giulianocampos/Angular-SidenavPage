@@ -28,4 +28,14 @@ export class SugestaoService {
   read(): Observable<Sugestao[]>{
     return this.http.get<Sugestao[]>(this.baseUrl)
   }
-}
+
+  readById(id: string): Observable<Sugestao> {
+    const url = `${this.baseUrl}/${id}`
+    return this.http.get<Sugestao>(url)
+  }
+
+  update(sugestao: Sugestao): Observable<Sugestao> {
+    const url = `${this.baseUrl}/${sugestao.id}`
+    return this.http.put<Sugestao>(url, sugestao)
+  }
+} 

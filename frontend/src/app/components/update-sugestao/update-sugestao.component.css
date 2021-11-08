@@ -1,0 +1,15 @@
+.content {
+  text-align: justify;
+  padding: 30px;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 20px;
+  margin-right: 15px;
+}

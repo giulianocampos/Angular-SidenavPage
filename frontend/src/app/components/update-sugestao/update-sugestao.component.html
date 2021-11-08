@@ -1,0 +1,26 @@
+<div class="content">
+
+  <mat-card>
+    <mat-card-title>Alterar Sugestão</mat-card-title>
+
+    <form>
+      <mat-form-field>
+          <input matInput placeholder="Dê um nome para sua sugestão" [(ngModel)]="sugestao.name" name="name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Resuma sua ideia" [(ngModel)]="sugestao.explicacao" name="explicacao">
+      </mat-form-field>
+
+    </form>
+
+    <button mat-raised-button (click)="updateSugestao()">
+      Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+      Cancelar
+    </button>
+
+  </mat-card>
+</div>
