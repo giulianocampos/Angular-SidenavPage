@@ -27,6 +27,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { UpdateSugestaoComponent } from './components/update-sugestao/update-sugestao.component';
 import { DeleteSugestaoComponent } from './components/delete-sugestao/delete-sugestao.component';
+import { LoginComponent } from './components/account/login/login.component';
+import { CreateAccountComponent } from './components/account/create-account/create-account.component';
+import { AuthenticationComponent } from './components/layout/authentication/authentication.component';
 
 
 @NgModule({
@@ -41,6 +44,9 @@ import { DeleteSugestaoComponent } from './components/delete-sugestao/delete-sug
     Read2TableComponent,
     UpdateSugestaoComponent,
     DeleteSugestaoComponent,
+    LoginComponent,
+    CreateAccountComponent,
+    AuthenticationComponent,
   ],
   imports: [
     BrowserModule,

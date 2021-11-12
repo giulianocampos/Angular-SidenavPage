@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>Crie sua conta</mat-card-title>
+
+  <form #form="ngForm">
+
+      <mat-form-field>
+        <input matInput class="form-control" type="text" name="name" id="name" placeholder="Digite seu nome" [(ngModel)]="account.name" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput class="form-control" type="email" name="email" id="email" placeholder="Digite seu e-mail" [(ngModel)]="account.email" required>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput class="form-control" type="password" name="password" id="password" placeholder="Digite sua senha" [(ngModel)]="account.password" required>
+      </mat-form-field>
+    </form>
+
+    <button mat-raised-button type="submit" [disabled]="form.form.invalid" (click)="onSubmit()">Criar minha conta</button>
+
+</mat-card>
